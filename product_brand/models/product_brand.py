@@ -22,12 +22,8 @@ class ProductBrand(models.Model):
         ondelete="restrict",
     )
     logo = fields.Binary("Logo File")
-    product_ids = fields.One2many(
-        "product.template", "product_brand_id", string="Brand Products"
-    )
-    products_count = fields.Integer(
-        string="Number of products", compute="_compute_products_count"
-    )
+    product_ids = fields.One2many("product.template", "product_brand_id", string="Brand Products")
+    products_count = fields.Integer(string="Number of products", compute="_compute_products_count")
 
     @api.depends("product_ids")
     def _compute_products_count(self):

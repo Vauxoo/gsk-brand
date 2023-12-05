@@ -99,10 +99,7 @@
                                     <field name="name" />
                                 </h4>
                                 <div>
-                                    <a
-                                        name="%(product_brand.action_open_brand_products)d"
-                                        type="action"
-                                    >
+                                    <a name="%(product_brand.action_open_brand_products)d" type="action">
                                         <t t-esc="record.products_count.value" />
                                         Products
                                     </a>
@@ -121,12 +118,7 @@
         <field name="arch" type="xml">
             <field name="name" position="after">
                 <field name="product_brand_id" />
-                <filter
-                    string="Brand"
-                    name="groupby_brand"
-                    domain="[]"
-                    context="{'group_by' : 'product_brand_id'}"
-                />
+                <filter string="Brand" name="groupby_brand" domain="[]" context="{'group_by' : 'product_brand_id'}" />
                 <separator />
             </field>
         </field>
@@ -149,11 +141,7 @@
         <field name="arch" type="xml">
             <xpath expr="//strong[hasclass('o_kanban_record_title')]" position="after">
                 <div>
-                    <a
-                        t-if="record.product_brand_id"
-                        type="action"
-                        name="%(action_open_single_product_brand)d"
-                    >
+                    <a t-if="record.product_brand_id" type="action" name="%(action_open_single_product_brand)d">
                         <field name="product_brand_id" />
                     </a>
                 </div>
@@ -165,10 +153,7 @@
         <field name="model">product.product</field>
         <field name="inherit_id" ref="product.product_kanban_view" />
         <field name="arch" type="xml">
-            <xpath
-                expr="//div[hasclass('oe_kanban_details')]/strong[1]"
-                position="after"
-            >
+            <xpath expr="//div[hasclass('oe_kanban_details')]/strong[1]" position="after">
                 <div>
                     <a t-if="record.product_brand_id" type="open">
                         <field name="product_brand_id" />

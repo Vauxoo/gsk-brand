@@ -65,7 +65,7 @@ msgstr "Nom mostrat"
 #. module: product_brand
 #: model:ir.model.fields,field_description:product_brand.field_product_brand__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: product_brand
 #: model:ir.model,name:product_brand.model_account_invoice_report
@@ -147,4 +147,4 @@ msgid "Select a partner for this brand if any."
 msgstr "Seleccioni una empresa per aquesta marca si hi ha."
 
 #~ msgid "product.brand"
-#~ msgstr "product.brand"
+#~ msgstr ""

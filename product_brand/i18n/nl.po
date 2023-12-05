@@ -65,7 +65,7 @@ msgstr "Schermnaam"
 #. module: product_brand
 #: model:ir.model.fields,field_description:product_brand.field_product_brand__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: product_brand
 #: model:ir.model,name:product_brand.model_account_invoice_report
@@ -90,7 +90,7 @@ msgstr "Laatst bijgewerkt op"
 #. module: product_brand
 #: model_terms:ir.ui.view,arch_db:product_brand.view_product_brand_kanban
 msgid "Logo"
-msgstr "Logo"
+msgstr ""
 
 #. module: product_brand
 #: model:ir.model.fields,field_description:product_brand.field_product_brand__logo
@@ -147,4 +147,4 @@ msgid "Select a partner for this brand if any."
 msgstr "Selecteer een relatie voor dit merk wanneer beschikbaar."
 
 #~ msgid "product.brand"
-#~ msgstr "product.brand"
+#~ msgstr ""

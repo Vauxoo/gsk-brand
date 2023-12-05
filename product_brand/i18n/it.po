@@ -109,7 +109,7 @@ msgstr "Numero di prodotti"
 #. module: product_brand
 #: model:ir.model.fields,field_description:product_brand.field_product_brand__partner_id
 msgid "Partner"
-msgstr "Partner"
+msgstr ""
 
 #. module: product_brand
 #: model:ir.actions.act_window,name:product_brand.action_open_single_product_brand
