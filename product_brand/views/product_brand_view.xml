@@ -153,7 +153,7 @@
         <field name="model">product.product</field>
         <field name="inherit_id" ref="product.product_kanban_view" />
         <field name="arch" type="xml">
-            <xpath expr="//div[hasclass('oe_kanban_details')]/strong[1]" position="after">
+            <xpath expr="//strong[hasclass('o_kanban_record_title')]" position="after">
                 <div>
                     <a t-if="record.product_brand_id" type="open">
                         <field name="product_brand_id" />
